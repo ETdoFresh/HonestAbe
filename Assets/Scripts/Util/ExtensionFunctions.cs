@@ -79,4 +79,9 @@ public static class ExtensionFunctions
 
         return goList.ToArray();
     }
+
+    public static void Play(this Animator animator, string stateName, float transitionDuration)
+    {
+        animator.CrossFade(stateName, transitionDuration);
+    }
 }
