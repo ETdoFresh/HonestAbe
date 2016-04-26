@@ -5,11 +5,8 @@ using BehaviourMachine;
 public class KeepRange : ActionNode {
 
 	private GameObject player;
-	private float distanceToPlayer;
-	private Vector2 playerPosition;
-	private Vector2 selfPosition;
-	private float directionX;
-	private float directionY;
+	private Vector2 playerPosition, selfPosition;
+	private float directionX, directionY, distanceToPlayer;
     private Movement movement;
 	private EnemyFollow enemyFollow;
 

@@ -1583,6 +1583,16 @@ MonoBehaviour:
     m_Blackboard: {fileID: 11418824}
     m_IsConstant: 0
     value: 15
+  - m_ID: 139533156
+    m_Name: preferredRangeMin
+    m_Blackboard: {fileID: 11418824}
+    m_IsConstant: 0
+    value: 10
+  - m_ID: 1916274620
+    m_Name: preferredRangeMax
+    m_Blackboard: {fileID: 11418824}
+    m_IsConstant: 0
+    value: 20
   m_IntVars: []
   m_BoolVars: []
   m_StringVars:
@@ -1676,7 +1686,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 11496152}
     m_EventID: 277351336
-  m_CachedInstanceID: 14042
+  m_CachedInstanceID: 16900
   m_Description: 
   m_IgnoreTimeScale: 0
   m_ResetStatusOnDisable: 1
@@ -1768,7 +1778,7 @@ MonoBehaviour:
     m_EventID: 1763704235
   - m_Destination: {fileID: 11445508}
     m_EventID: 1934339850
-  m_CachedInstanceID: 14048
+  m_CachedInstanceID: 16906
   m_Description: 
   m_IgnoreTimeScale: 0
   m_ResetStatusOnDisable: 1
@@ -1841,7 +1851,7 @@ MonoBehaviour:
     m_EventID: 1763704235
   - m_Destination: {fileID: 11454856}
     m_EventID: 713601555
-  m_CachedInstanceID: 14038
+  m_CachedInstanceID: 16896
   m_Description: 
   m_IgnoreTimeScale: 0
   m_ResetStatusOnDisable: 1
@@ -1993,8 +2003,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c2280ee63dc364ba5453dd1e108686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalMovementSpeed: 14
-  vericalMovementSpeed: 8
+  horizontalMovementSpeed: 9
+  vericalMovementSpeed: 6
   direction: 1
   velocity: {x: 0, y: 0}
   movementSmoothing: 0.115
@@ -2022,7 +2032,7 @@ MonoBehaviour:
     m_EventID: 334526696
   - m_Destination: {fileID: 11454856}
     m_EventID: 713601555
-  m_CachedInstanceID: 14052
+  m_CachedInstanceID: 16910
   m_Description: 
   m_IgnoreTimeScale: 0
   m_ResetStatusOnDisable: 1
@@ -2120,7 +2130,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 11422368}
     m_EventID: 805742543
-  m_CachedInstanceID: 14036
+  m_CachedInstanceID: 16894
   m_Description: 
   m_IgnoreTimeScale: 0
   m_ResetStatusOnDisable: 1
@@ -2180,7 +2190,7 @@ MonoBehaviour:
     m_EventID: 225201245
   - m_Destination: {fileID: 11445508}
     m_EventID: 1934339850
-  m_CachedInstanceID: 14046
+  m_CachedInstanceID: 16904
   m_Description: 
   m_IgnoreTimeScale: 0
   m_ResetStatusOnDisable: 1
@@ -2250,7 +2260,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 11422368}
     m_EventID: 805742543
-  m_CachedInstanceID: 14040
+  m_CachedInstanceID: 16898
   m_Description: 
   m_IgnoreTimeScale: 0
   m_ResetStatusOnDisable: 1
@@ -2394,7 +2404,7 @@ MonoBehaviour:
   m_Transitions:
   - m_Destination: {fileID: 11422368}
     m_EventID: 805742543
-  m_CachedInstanceID: 14050
+  m_CachedInstanceID: 16908
   m_Description: 
   m_IgnoreTimeScale: 0
   m_ResetStatusOnDisable: 1
@@ -2452,7 +2462,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 14034
+  m_CachedInstanceID: 16892
   m_Description: 
   m_EnabledState: {fileID: 0}
   m_LastEnabledState: {fileID: 0}
@@ -3160,7 +3170,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: horizontalMovementSpeed
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_NodeSerialization.m_BranchIndex.Array.data[3]
@@ -3186,6 +3196,14 @@ Prefab:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: 529ea5cf4288ec840b986e88adcb0e60, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_NodeSerialization.m_IntValue.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: vericalMovementSpeed
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 180872}

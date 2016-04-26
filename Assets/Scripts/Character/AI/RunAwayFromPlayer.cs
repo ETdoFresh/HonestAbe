@@ -11,6 +11,7 @@ public class RunAwayFromPlayer : ActionNode {
 	private Movement movement;
 	private EnemyFollow enemyFollow;
 	private Vector3 deltaPosition;
+	private float directionX, directionY, distanceToPlayer;
 
 	public override void Start () {
 		player = GameObject.Find ("Player");
@@ -24,11 +25,14 @@ public class RunAwayFromPlayer : ActionNode {
 		// Move in the opposite direction of the player
 		playerPosition = player.transform.position;
 		selfPosition = self.transform.position;
+
 		Vector3 vectorToPlayer = playerPosition - selfPosition;
 		deltaPosition = -vectorToPlayer.normalized * movement.horizontalMovementSpeed;
 		float newY = selfPosition.y + deltaPosition.y;
-		if(newY < -0.1f && newY > -11.2f)
-			movement.Move(deltaPosition);
+		if (newY < -0.1f && newY > -11.2f) {
+			movement.SetState (Movement.State.Walk);
+			baseCollision.Move (Time.deltaTime * deltaPosition);
+		}
 		return Status.Success;
 	}
 }
