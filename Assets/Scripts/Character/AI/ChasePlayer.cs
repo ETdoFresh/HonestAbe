@@ -6,11 +6,14 @@ public class ChasePlayer : ActionNode {
 	private EnemyFollow enemyFollow;
 	private GameObject player;
 	private Movement movement;
+	private BaseCollision baseCollision;
+	private Vector3 playerPosition, selfPosition, deltaPosition;
 
 	public override void Start(){
 		enemyFollow = self.GetComponent<EnemyFollow> ();
 		player = GameObject.Find ("Player");
 		movement = self.GetComponent<Movement> ();
+		baseCollision = self.GetComponent<BaseCollision> ();
 	}
 
 	public override Status Update () {
@@ -19,7 +22,7 @@ public class ChasePlayer : ActionNode {
 		enemyFollow.targetType = EnemyFollow.TargetType.Player;
 
 		// Set my stop distance so that I don't run into the player
-		enemyFollow.stopDistanceX = 2;
+		enemyFollow.stopDistanceX = 0;
 		enemyFollow.stopDistanceY = 0.1f;
 
 		// Unclaim my attack position

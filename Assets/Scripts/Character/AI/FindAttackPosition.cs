@@ -101,7 +101,7 @@ public class FindAttackPosition : ActionNode {
 		enemyFollow.targetType = EnemyFollow.TargetType.TargetGameObject;
 		enemyFollow.target = target;
 		// Change my stop distance to 0 so that I go all the way to that spot
-		enemyFollow.stopDistanceX = 0;
-		enemyFollow.stopDistanceY = 0;
+		//enemyFollow.stopDistanceX = 0;
+		//enemyFollow.stopDistanceY = 0;
 	}
 }
