@@ -5,7 +5,7 @@ using BehaviourMachine;
 namespace BehaviourMachine.Samples {
     public class UpdateGUI : StateBehaviour {
 
-        public GUIText countText;
+        //public GUIText countText;
         public GameObject winText;
 
         IntVar m_Count;
@@ -15,7 +15,7 @@ namespace BehaviourMachine.Samples {
         }
 
         void OnEnable () {
-            countText.text = "Count: " + m_Count.Value.ToString();
+            //countText.text = "Count: " + m_Count.Value.ToString();
 
             if (m_Count.Value >= 12)
                 winText.SetActive(true);
